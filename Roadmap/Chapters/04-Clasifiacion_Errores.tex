@@ -1,0 +1,338 @@
+\chapter{Clasificación de Errores}
+
+\section{Definición de error}
+El \textbf{error o incertidumbre} es la diferencia entre el valor medido y el valor verdadero o real de la cantidad física.
+
+Las cantidades se obtienen mediante un proceso de medición.
+
+\subsection{Medida Directa}
+\noindent
+\textbf{Medida directa} $\longrightarrow$ Se obtienen directamente del instrumento. \\
+\textbf{Ejemplos:} longitud, masa, trayectoria.
+
+\subsection{Medida Indirecta}
+\noindent
+\textbf{Medida indirecta} $\longrightarrow$ Se necesita realizar algún cálculo a partir de medidas directas. \\
+\textbf{Ejemplos:} área, Velocidad, etc.
+
+\subsection{Consideraciones}
+- Medir es comparar una cantidad con otra de la misma naturaleza, tomada como patrón.\\
+- El valor verdadero (real) es imposible obtenerlo en una medición; cada proceso de medición viene acompañado de errores e incertidumbres.
+
+\newpage
+\section{Errores Sistemáticos}
+
+Los errores sistemáticos permanecen durante todo el proceso de medición. \textbf{Afectan a todas las mediciones}.
+
+\subsection{a) Instrumentales}
+Son aquellos debidos a los aparatos de medición.  
+Ejemplo: mala calibración o desgaste del instrumento.
+
+\subsection{b) Personales}
+Se originan debido a limitaciones humanas, como la vista, la audición o el tiempo de reacción.
+
+\subsection{c) Método}
+Surgen debido a que hay métodos que son más favorables que otros.
+
+\section{Errores Accidentales}
+
+Estos errores se producen en condiciones variables durante el proceso de medición.  
+\textbf{ Dato: No afectan a todas las mediciones}.
+
+
+\section{Exactitud, Precisión y Sensibilidad}
+
+\subsection{Exactitud}
+La exactitud es el grado de concordancia entre el valor medido y el valor verdadero.
+
+\subsection{Precisión}
+La precisión es el grado de concordancia entre una medida y otras de la misma cantidad física, realizadas bajo las mismas condiciones.
+
+\subsection{Sensibilidad}
+La sensibilidad de un instrumento es el valor mínimo de la cantidad física que puede medir. Para el instrumento, esto corresponde a la menor división posible.  
+Ejemplo: Regla milimetrada, sensibilidad = 1 mm.
+
+\newpage
+\section{Error Absoluto \& Relativo}
+
+\subsection{Error Absoluto}
+El error absoluto se define como:
+\[
+\Delta X = |X_0 - X|
+\]
+Donde:
+\begin{itemize}
+    \item \( X_0 \): Valor verdadero (o real).
+    \item \( X \): Valor medido.
+\end{itemize}
+
+\subsection{Error Relativo}
+El error relativo se calcula como:
+\[
+\varepsilon = \frac{\Delta X}{|X|}
+\]
+Donde:
+\begin{itemize}
+    \item \( \Delta X \): Error absoluto.
+    \item \( X \): Valor medido.
+\end{itemize}
+
+\subsection{Error Relativo Porcentual}
+El error relativo porcentual se expresa como:
+\[
+\varepsilon (\%) = \varepsilon \cdot 100 = \frac{\Delta X}{|X|} \cdot 100
+\]
+
+
+\section {Presentación de una Medida}
+
+Cuando se entrega formalmente una medida, se expresa de la siguiente manera:
+
+\[
+X \pm \Delta X
+\]
+
+Donde:
+\begin{itemize}
+    \item \( X \) es el \textbf{valor medido}.
+    \item \( \Delta X \) es el \textbf{error absoluto}.
+\end{itemize}
+
+\noindent Esto indica que el valor verdadero \( X_0 \) se encuentra en algún punto dentro del intervalo:
+
+\[
+X - \Delta X \leq X_0 \leq X + \Delta X
+\]
+
+\section{Reglas en la Presentación de la Medida}
+
+\subsection{Regla 1: Igual número de decimales}
+El valor medido y el error deben tener el mismo número de decimales. 
+
+Ejemplos:
+
+\[
+25.53 \pm 0.5 \quad \text{(Incorrecto)} \quad \Rightarrow \quad 25.5 \pm 0.5 \quad \text{(Correcto)}
+\]
+
+\[
+25.53 \pm 0.005 \quad \text{(Incorrecto)} \quad \Rightarrow \quad 25.530 \pm 0.005 \quad \text{(Correcto)}
+\]
+
+\subsection{Regla 2: Orden de magnitud del error}
+Cuando el valor medido y el error son números enteros, el orden de magnitud de la última cifra del valor medido debe ser igual o mayor al orden de magnitud del error.
+
+Ejemplo:
+
+\[
+853 \pm 20 \text{ g} \quad \Rightarrow \quad 850 \pm 20 \text{ g}
+\]
+
+\subsection{Regla 3: Redondeo del error}
+Para este curso, el error se debe entregar con una cifra significativa redondeada.
+
+Ejemplo:
+
+\[
+\text{Cierta medida de masa: } \quad 25.12 \pm 0.05 \text{ g}
+\]
+
+\newpage
+\section{Cálculo del Error Relativo Porcentual}
+
+Dada la medida:
+
+\[
+25.12 \pm 0.05 \text{ g}
+\]
+
+Se desea calcular el error relativo porcentual.
+
+\subsection{Formula}
+
+El error relativo porcentual se define como:
+
+\[
+E (\%) = \frac{\Delta X}{X} \times 100
+\]
+
+Sustituyendo los valores:
+
+\[
+E (\%) = \frac{0.05}{25.12} \times 100 = 0.2\%
+\]
+
+\section{Cálculo del Error Absoluto en una Medida de Volumen}
+
+Se mide el volumen de cierto líquido y se obtiene:
+
+\[
+X = 54 \text{ mL}
+\]
+
+con un error porcentual del \( 1\% \). Se desea encontrar el error absoluto \( \Delta X \) y expresar la medida en la forma:
+
+\[
+X \pm \Delta X
+\]
+
+\subsection{Formula}
+
+La relación entre error absoluto y error porcentual es:
+
+\[
+E (\%) = \frac{\Delta X}{X} \times 100
+\]
+
+Despejando \( \Delta X \):
+
+\[
+1 = \frac{\Delta X \times 100}{54}
+\]
+
+\[
+\Delta X = \frac{54}{100} = 0.54 \text{ mL}
+\]
+
+Por lo tanto, la medida expresada correctamente es:
+
+\[
+54 \pm 0.54 \text{ mL} \approx 54.0 \pm 0.5 \text{ mL}
+\]
+
+\section{Definición del Error Absoluto}
+
+En general, la medida se expresa como:
+
+\[
+X \pm \Delta X
+\]
+
+donde el \textbf{error absoluto} se define como:
+
+\[
+\Delta X = |X_0 - X|
+\]
+
+siendo \( X_0 \) el valor verdadero o estimado.
+
+\section{Factores que Afectan la Medición}
+
+Existen dos factores principales que afectan la medición:
+\begin{enumerate}
+    \item Sensibilidad del instrumento.
+    \item Estadística.
+\end{enumerate}
+
+\newpage
+\section{Estimación del Error}
+\subsection{Medidas Directas}
+
+\subsubsection{Caso 1: Una única medida}
+
+Si se realiza una única medida, el error se estima a partir de la sensibilidad del instrumento:
+
+\begin{itemize}
+    \item Si el instrumento es \textbf{analógico}: 
+    \[
+    \Delta X = \frac{S}{2}
+    \]
+    \item Si el instrumento es \textbf{digital}: 
+    \[
+    \Delta X = S
+    \]
+\end{itemize}
+
+\subsubsection{Caso 2: Varias medidas}
+
+Si se realizan varias mediciones, se deben calcular los siguientes valores:
+
+\begin{itemize}
+    \item \textbf{Valor medido:} Se obtiene como el promedio de los valores registrados:
+    \[
+    \bar{X} = \frac{1}{N} \sum_{i=1}^{N} X_i
+    \]
+    \item \textbf{Error:} Se estima utilizando la desviación estándar:
+    \[
+    \sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (X_i - \bar{X})^2}
+    \]
+\end{itemize}
+
+\subsection{Estimación del error}
+La estimación del error básico se calcula como:
+\[
+\Delta x = |x_0 - x|
+\]
+
+\newpage
+\section{Medidas Directas}
+
+\subsubsection{Caso 1: Si se realiza una sola medición}
+En este caso, el error $\Delta x$ se estima como la sensibilidad del instrumento de medición. Dependiendo del tipo de instrumento, se tiene:
+
+\begin{itemize}
+    \item \textbf{Instrumento analógico:} \\
+    El error es:
+    \[
+    \Delta x = \frac{s}{2}
+    \]
+    donde $s$ representa la sensibilidad del instrumento.
+    
+    \item \textbf{Instrumento digital:} \\
+    El error se toma como:
+    \[
+    \Delta x = s
+    \]
+    donde $s$ es la sensibilidad del instrumento.
+\end{itemize}
+
+\subsubsection{Caso 2: Si se realizan varias mediciones}
+Cuando se realizan múltiples mediciones, el error $\Delta x$ se estima como la desviación estándar de las mediciones realizadas, y el valor final se expresa como:
+\[
+x \pm \Delta x
+\]
+donde:
+\begin{itemize}
+    \item $\Delta x$ es la desviación estándar.
+    \item $x$ es el promedio de las mediciones.
+\end{itemize}
+
+\newpage
+\section{Medidas Indirectas}
+En la propagación de errores para medidas indirectas, las fórmulas principales son:
+
+\subsection{Suma}
+Para la suma de dos valores $A$ y $B$ con sus respectivas incertidumbres $\Delta A$ y $\Delta B$, el resultado es:
+\[
+(A \pm \Delta A) + (B \pm \Delta B) = A + B \pm (\Delta A + \Delta B)
+\]
+
+\subsection{Resta}
+Para la resta, el resultado es:
+\[
+(A \pm \Delta A) - (B \pm \Delta B) = A - B \pm (\Delta A + \Delta B)
+\]
+
+\subsection{Producto}
+Para el producto de dos valores, la propagación de errores se calcula como:
+\[
+(A \pm \Delta A)(B \pm \Delta B) = A \cdot B \pm A \cdot B \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right)
+\]
+
+\subsection{Cociente}
+Para el cociente de dos valores, el resultado es:
+\[
+\frac{A \pm \Delta A}{B \pm \Delta B} = \frac{A}{B} \pm \frac{A}{B} \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right)
+\]
+
+\subsection{Multiplicación por un escalar}
+Si un valor $A \pm \Delta A$ se multiplica por un escalar $C$, el resultado es:
+\[
+C(A \pm \Delta A) = CA \pm C \Delta A
+\]
+
+\subsection{Potencia}
+Si un valor $A \pm \Delta A$ se eleva a una potencia $n$, la propagación del error se calcula como:
+\[
+(A \pm \Delta A)^n = A^n \pm n \cdot A^{n-1} \cdot \Delta A
+\]

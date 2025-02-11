@@ -1,0 +1,325 @@
+\chapter{Movimiento en el Plano}
+
+En el sistema de coordenadas rectangular, los ejes $x$ y $y$ son independientes entre sí. 
+
+\textbf{Por lo tanto:} Se puede estudiar por separado el movimiento en cada eje.
+
+\subsection*{Movimiento de Proyectiles}
+
+\begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        % Ejes coordenados
+        \draw[->] (-0.5,0) -- (5,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,4) node[left] {$y$};
+        
+        % Vector de velocidad inicial
+        \draw[->, thick] (0,0) -- (3,3) node[right] {$V_0$};
+        
+        % Componentes del vector de velocidad inicial
+        \draw[dashed] (3,3) -- (3,0) node[below] {$V_{ox}$};
+        \draw[dashed] (3,3) -- (0,3) node[left] {$V_{oy}$};
+        
+        % Ángulo
+        \draw (0.6,0) arc[start angle=0, end angle=45, radius=0.6];
+        \node at (0.9,0.2) {$\theta$};
+        
+        % Gravedad
+        \draw[->, thick] (4,3) -- (4,2) node[right] {$g$};
+    \end{tikzpicture}
+\end{center}
+
+Las ecuaciones del movimiento son:
+
+\[
+V_{ox} = |V_0| \cos\theta
+\]
+\[
+V_{oy} = |V_0| \sen\theta
+\]
+
+\[
+a_x = 0, \quad a_y = -g
+\]
+
+Las ecuaciones de posición y velocidad:
+
+\[
+x = x_0 + V_{ox} \cdot t
+\]
+\[
+y = y_0 + V_{oy} \cdot t - \frac{1}{2} g t^2
+\]
+
+\[
+V_x = V_{ox}
+\]
+\[
+V_y = V_{oy} - g t
+\]
+
+\subsection*{Ejemplo}
+
+Se lanza una piedra desde el techo de un edificio de 40m con una velocidad de $10$ m/s en una dirección de $28^\circ$ respecto de la horizontal. Determinar:
+
+\begin{enumerate}
+    \item[a)] La altura máxima alcanzada.
+    \item[b)] Su posición y velocidad 2s después de soltarse.
+    \item[c)] Su alcance horizontal y su tiempo de vuelo.
+    \item[d)] La velocidad de la piedra justo antes de tocar el suelo.
+\end{enumerate}
+
+\subsection*{Diagrama del Problema}
+
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+        % Edificio
+        \draw[thick] (-0.5,0) -- (-0.5,4) -- (0.5,4) -- (0.5,0);
+        \draw[thick, dashed] (0.5,4) -- (5,0); % Trayectoria
+        
+        % Coordenadas y vectores
+        \draw[->] (-1,0) -- (6,0) node[below] {$x$};
+        \draw[->] (0,-1) -- (0,5) node[left] {$y$};
+        
+        % Altura
+        \draw[dashed] (-0.5,4) -- (-1,4);
+        \node[left] at (-1,4) {$40m$};
+        
+        % Vector velocidad inicial
+        \draw[->, thick] (0.5,4) -- (2.5,4.8) node[right] {$V_0 = 10m/s$};
+        
+        % Ángulo
+        \draw (0.8,4) arc[start angle=0, end angle=28, radius=0.8];
+        \node[right] at (1.1,4.2) {$28^\circ$};
+    \end{tikzpicture}
+\end{center}
+
+\subsection*{Resolución}
+
+\textbf{Condiciones iniciales:}
+
+\[
+t = 0, \quad x_0 = 0, \quad y_0 = 40m
+\]
+
+\[
+V_{ox} = 10 \cos 28^\circ \approx 8.83 \quad \text{m/s}
+\]
+
+\[
+V_{oy} = 10 \sen 28^\circ \approx 4.69 \quad \text{m/s}
+\]
+
+\subsection{a) Altura máxima}
+
+En la altura máxima, la velocidad en $y$ es cero:
+
+\[
+V_y = 0 = (10 \sen 28^\circ) - 9.8t
+\]
+
+Despejando $t$:
+
+\[
+t = \frac{10 \sen 28^\circ}{9.8} \approx 0.479s
+\]
+
+Calculando la altura máxima:
+
+\[
+y = 40 + 10 \sen 28^\circ \cdot 0.479 - 4.9 (0.479)^2
+\]
+
+\[
+y \approx 41.12m
+\]
+
+\subsection*{b) Posición y Velocidad a los 2 segundos}
+
+\subsection*{Cálculo de la posición}
+
+\[
+x(2) = x_0 + V_{ox} \cdot t
+\]
+
+\[
+x(2) = 0 + (10 \cos 28^\circ) \cdot 2
+\]
+
+\[
+x(2) \approx 17.66 \text{ m}
+\]
+
+\[
+y(2) = y_0 + V_{oy} \cdot t - \frac{1}{2} g t^2
+\]
+
+\[
+y(2) = 40 + (10 \sen 28^\circ) \cdot 2 - 4.9 (2)^2
+\]
+
+\[
+y(2) \approx 29.79 \text{ m}
+\]
+
+\subsection*{Cálculo de la velocidad}
+
+\[
+V_x = V_{ox} = 10 \cos 28^\circ \approx 8.83 \text{ m/s}
+\]
+
+\[
+V_y = V_{oy} - g t
+\]
+
+\[
+V_y = (10 \sen 28^\circ) - 9.8 (2)
+\]
+
+\[
+V_y \approx -14.9 \text{ m/s}
+\]
+
+\subsection{c) Cuando la Piedra Toca el Suelo}
+
+Se considera que cuando la piedra toca el suelo, su coordenada en $y$ es cero:
+
+\[
+y = 0
+\]
+
+\[
+0 = 40 + (10 \sen 28^\circ) t - 4.9 t^2
+\]
+
+Esto es una ecuación cuadrática de la forma:
+
+\[
+at^2 + bt + c = 0
+\]
+
+Resolviendo con la fórmula general:
+
+\[
+t = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+Se obtiene:
+
+\[
+t_1 < 0, \quad t_2 \approx 3.38 \text{ s}
+\]
+
+\subsection*{Cálculo del alcance horizontal}
+
+\[
+t = \frac{x - x_0}{V_{ox}}
+\]
+
+Sustituyendo valores, se encuentra el alcance horizontal.
+
+
+\[
+y = y_0 + V_{oy} \left( \frac{x - x_0}{V_{ox}} \right) - \frac{g}{2} \left( \frac{x - x_0}{V_{ox}} \right)^2
+\]
+
+Esta ecuación tiene la forma general:
+
+\[
+y = C + A x - B x^2
+\]
+
+\section*{Cálculo del alcance horizontal}
+
+El alcance horizontal se obtiene evaluando el tiempo total de vuelo en la ecuación de posición en $x$:
+
+\[
+x(3.38) = x_0 + V_{ox} \cdot t
+\]
+
+\[
+x(3.38) = 0 + (10 \cos 28^\circ) \cdot 3.38
+\]
+
+\[
+x(3.38) \approx 29.84 \text{ m}
+\]
+
+\section*{Dibujo de la trayectoria}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Ejes coordenados
+    \draw[->] (0,0) -- (7,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,5) node[above] {$y$};
+    
+    % Trayectoria parabólica
+    \draw[thick, domain=0:6, samples=100] plot (\x, {3 + 0.7*\x - 0.2*\x*\x});
+    
+    % Punto de lanzamiento
+    \filldraw (0,3) circle (2pt) node[left] {$(x_0, y_0)$};
+    
+    % Punto de caída
+    \filldraw (6,0) circle (2pt) node[below] {$(x_f, 0)$};
+    
+    % Vectores de velocidad
+    \draw[->] (2,3.5) -- (3,4.5) node[right] {$\vec{V}$};
+    \draw[->] (2,3.5) -- (3.5,3.5) node[below] {$V_x$};
+    \draw[->] (2,3.5) -- (2,2.5) node[left] {$V_y$};
+\end{tikzpicture}
+\end{center}
+
+\subsection{d) Velocidad en $t = 3.38$ s}
+
+\subsection*{Componente horizontal}
+
+\[
+V_x = V_{ox} = 10 \cos 28^\circ \approx 8.83 \text{ m/s}
+\]
+
+\subsection*{Componente vertical}
+
+\[
+V_y = V_{oy} - g t
+\]
+
+\[
+V_y = (10 \sen 28^\circ) - 9.8 \cdot 3.38
+\]
+
+\[
+V_y \approx -22.43 \text{ m/s}
+\]
+
+\subsection*{Velocidad resultante y ángulo}
+
+\[
+\vec{V} = V_x \hat{i} + V_y \hat{j}
+\]
+
+\[
+V = \sqrt{V_x^2 + V_y^2}
+\]
+
+\[
+V = \sqrt{(8.83)^2 + (-22.43)^2}
+\]
+
+\[
+V \approx 29.77 \text{ m/s}
+\]
+
+\[
+\alpha = \tan^{-1} \left( \frac{|V_y|}{V_x} \right)
+\]
+
+\[
+\alpha = \tan^{-1} \left( \frac{22.43}{8.83} \right)
+\]
+
+\[
+\alpha \approx 72.75^\circ
+\]
+
+
+
+

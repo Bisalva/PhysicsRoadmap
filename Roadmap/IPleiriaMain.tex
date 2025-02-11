@@ -1,0 +1,53 @@
+% Packages and document configurations.
+\documentclass[en]{IPLeiriaThesis}
+
+% Document variables.
+\input{Variables/Variables}
+
+\renewcommand{\contentsname}{Contenidos}
+
+\begin{document}
+
+% Front matter.
+\include{Matter/00-Cover}
+\include{Matter/01-FPage}
+
+% Abstract.
+\include{Chapters/00-Abstract}
+
+\renewcommand{\contentsname}{Contenidos}
+
+% List of contents
+\tableofcontents
+
+% Arabic numeration.
+\pagenumbering{arabic}
+
+% Unidad 1 - Capitulos
+\include{Chapters/02-Unidades_Medidas}
+\include{Chapters/03-Cifras_Significativas}
+\include{Chapters/04-Clasifiacion_Errores}
+\include{Chapters/05-Vectores}
+\include{Chapters/06-Representacion_Suma}
+\include{Chapters/07-Cinematica}
+\include{Chapters/08-Movimiento_Unidimensional}
+\include{Chapters/09-Caida_Libre}
+\include{Chapters/10-Movimiento_Plano}
+
+% Unidad 2 - Capitulos
+\include{Chapters/11-Dinamica}
+\include{Chapters/12-Fuerzas}
+\include{Chapters/13-Trabajo_Y_Energia_Cinetica}
+
+% Unidad 3 - Capitulos
+\include{Chapters/14-Energia_Mecanica}
+\include{Chapters/15-Teorema_Trabajo}
+\include{Chapters/16-Momento_Lineal}
+
+% Bibliography.
+\printbibliography
+
+% Back page.
+\input{Matter/08-BPage}
+
+\end{document}

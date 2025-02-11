@@ -1,0 +1,198 @@
+\chapter{Caída Libre}
+\section{Suposiciones}
+
+\begin{enumerate}
+    \item Se desprecia la resistencia del aire.
+    \item La aceleración de gravedad ``g'' no varía en el movimiento.
+\end{enumerate}
+
+\section*{Movimiento con aceleración constante}
+\[
+g = 9.8 \, m/s^2
+\]
+Dirección: hacia abajo.
+
+\subsection*{En Particular}
+Si la dirección en la cual se lanza un objeto es vertical, tendremos un movimiento unidimensional.
+
+\section*{Ejemplo de un M.R.U.A}
+\[
+a_y = -g
+\]
+
+\subsection*{Posición y Velocidad}
+\[
+y(t) = y_0 + v_{0y}t - \frac{g}{2} t^2
+\]
+
+\[
+V_y (t) = v_{0y} - g t
+\]
+
+\subsection*{Ejemplo}
+Se lanza una piedra desde el borde del techo de un edificio de 40m de altura, con una velocidad de 10m/s hacia arriba. Determinar:
+
+\vspace{1cm}
+
+\begin{center}
+\begin{picture}(100,100)
+    % Dibujo del edificio
+    \put(40,10){\line(0,1){80}} % Línea del edificio
+    \put(40,90){\line(1,0){20}} % Techo
+    \put(60,10){\line(0,1){80}} % Línea del otro lado
+    \put(48,92){\circle*{5}} % Piedra lanzada
+\end{picture}
+\end{center}
+
+\section*{Enunciado}
+\begin{enumerate}
+    \item[a)] La altura máxima.
+    \item[b)] El instante en que la piedra alcanza su altura inicial.
+    \item[c)] El instante en que la piedra alcanza una altura de 20 m sobre el suelo. Su velocidad en este instante.
+    \item[d)] El tiempo que tomará la piedra en tocar el suelo (desde que fue lanzado). Su velocidad justo antes de tocar el suelo.
+\end{enumerate}
+
+\section*{Solución}
+
+\subsection*{Datos Iniciales}
+\begin{itemize}
+    \item Se usa el sistema de referencia $S-R$.
+    \item $t = 0$, comienza el movimiento.
+    \item $y(0) = 40m$
+    \item $V_y(0) = 10m/s$
+\end{itemize}
+
+\subsection*{a) Cálculo de la altura máxima}
+En la altura máxima, la velocidad en la dirección $y$ es cero:
+\[
+V_y = 0
+\]
+
+\[
+0 = 10 - 9.8t
+\]
+
+Despejando el tiempo $t$:
+
+\[
+t = \frac{10}{9.8} = \frac{50}{49} s
+\]
+
+\subsubsection*{Altura máxima}
+\[
+y = 40 + 10 \left(\frac{50}{49} \right) - 4.9 \left(\frac{50}{49} \right)^2
+\]
+
+\[
+= \frac{2210}{49} \approx 45.1 m
+\]
+
+\begin{center}
+\begin{picture}(100,100)
+    % Dibujo del edificio y trayectoria
+    \put(40,10){\line(0,1){80}} % Edificio
+    \put(40,90){\line(1,0){20}} % Techo
+    \put(60,10){\line(0,1){80}} % Otra línea del edificio
+    \put(50,95){\vector(0,1){10}} % Flecha de subida
+    \put(50,5){\vector(0,-1){5}} % Flecha de caída
+    \put(55,100){$V_y = 0$}
+    
+    % Ejes coordenados
+    \put(80,10){\vector(1,0){15}} % Eje X
+    \put(80,10){\vector(0,1){15}} % Eje Y
+    \put(96,8){$x$}
+    \put(78,26){$y$}
+\end{picture}
+\end{center}
+
+\section*{Datos Iniciales}
+\begin{itemize}
+    \item Aceleración debido a la gravedad: $g = 9.8 \text{ m/s}^2$
+    \item Altura inicial: $y_0 = 40$ m
+    \item Velocidad inicial en el eje $y$: $v_{0y} = 10$ m/s
+\end{itemize}
+
+\subsection{b) Momento en que el objeto alcanza su altura inicial }
+Se usa la ecuación del movimiento:
+\begin{equation}
+    y = y_0 + v_{0y}t - \frac{g}{2} t^2
+\end{equation}
+
+Dado que $y = y_0$, tenemos:
+\begin{equation}
+    40 = 40 + 10t - 4.9t^2
+\end{equation}
+Restando 40 en ambos lados:
+\begin{equation}
+    0 = 10t - 4.9t^2
+\end{equation}
+Factorizando $t$:
+\begin{equation}
+    t(10 - 4.9t) = 0
+\end{equation}
+De aquí obtenemos dos soluciones:
+\begin{equation}
+    t = 0 \quad \text{ó} \quad t = \frac{10}{4.9} \approx 2.04 \text{ s}
+\end{equation}
+Por lo tanto, el objeto alcanza la altura inicial en $t \approx 2.04$ s.
+
+\subsection{c)instante en que el objeto alcanza los 20m}
+
+Se usa nuevamente la ecuación:
+\begin{equation}
+    y = y_0 + v_{0y}t - \frac{g}{2} t^2
+\end{equation}
+Sustituyendo $y = 20$:
+\begin{equation}
+    20 = 40 + 10t - 4.9t^2
+\end{equation}
+Restando 20 en ambos lados:
+\begin{equation}
+    0 = 20 + 10t - 4.9t^2
+\end{equation}
+Resolviendo la ecuación cuadrática:
+\begin{equation}
+    t = \frac{-10 \pm \sqrt{10^2 - 4(-4.9)(20)}}{2(-4.9)}
+\end{equation}
+Calculando el discriminante:
+\begin{equation}
+    t = \frac{-10 \pm \sqrt{100 + 392}}{-9.8}
+\end{equation}
+\begin{equation}
+    t = \frac{-10 \pm \sqrt{492}}{-9.8}
+\end{equation}
+Aproximando:
+\begin{equation}
+    t_1 \approx -1.24 \text{ s}, \quad t_2 \approx 3.28 \text{ s}
+\end{equation}
+El tiempo válido es $t_2$, por lo que el objeto tarda aproximadamente **3.28 s** en llegar a la altura de **20 m**.
+
+Dado que la velocidad a $t = 3.28s$ es:
+
+\begin{equation}
+V = 10 - 9.8 \times 3.28 \approx -22.14 \text{ m/s}
+\end{equation}
+
+\subsection*{d) Cuando el objeto toca el suelo}
+Sabemos que $y = 0$, entonces:
+
+\begin{equation}
+0 = 40 + 10t - 4.9t^2
+\end{equation}
+
+Resolviendo la ecuación cuadrática:
+
+\begin{equation}
+t_1 \approx 4.05s, \quad t_2 \approx -2.013 \quad (\text{descartado por ser negativo})
+\end{equation}
+
+Por lo tanto, el objeto tarda aproximadamente $4.05s$ en tocar el suelo.
+
+\subsection*{Velocidad justo antes de tocar el suelo}
+
+\begin{equation}
+V = 10 - 9.8 \times 4.05 \approx -29.69 \text{ m/s}
+\end{equation}
+
+
+
